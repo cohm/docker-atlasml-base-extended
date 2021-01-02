@@ -1,7 +1,7 @@
 FROM atlasml/ml-base:latest
 
 # Install correct versions of PyTorch, cuda and PyTorch Gemetric with dependencies
-RUN python3 -m pip install torch==1.5.0+cu102
+RUN python3 -m pip install torch==1.5.0
 RUN python3 -m pip install torch-scatter==latest+cpu -f https://pytorch-geometric.com/whl/torch-1.5.0.html
 RUN python3 -m pip install torch-sparse==latest+cpu -f https://pytorch-geometric.com/whl/torch-1.5.0.html
 RUN python3 -m pip install torch-cluster==latest+cu102 -f https://pytorch-geometric.com/whl/torch-1.5.0.html
