@@ -1,7 +1,7 @@
 FROM atlasml/ml-base:latest
 
 # Update pip first
-RUN python3 -m pip install --user --upgrade pip
+RUN python3 -m pip install --upgrade pip
 
 # Install correct versions of PyTorch, cuda and PyTorch Gemetric with dependencies
 RUN python3 -m pip install --user  torch==1.5.0
