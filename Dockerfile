@@ -1,8 +1,5 @@
 FROM atlasml/ml-base:latest
 
-# Update pip first
-RUN python3 -m pip install --upgrade pip
-
 # Install correct versions of PyTorch, cuda and PyTorch Gemetric with dependencies
 RUN python3 -m pip install --user  torch==1.5.0
 RUN python3 -m pip install --user torch-scatter==latest+cpu -f https://pytorch-geometric.com/whl/torch-1.5.0.html
